@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function valores(){
+            let x=5;
+            let Numeros =[];
+            let NumerosPares=[];
+            
+            for(i=0;i<x;i++){
+            
+                let numero=parseInt(prompt('ingrese valores')+(i+1));
+                Numeros.push(numero);
+            
+           
+                if(Numeros%2===0){
+                    NumerosPares.push(Numeros);
+                    
+              
+            }
+            if(NumerosPares.length>0){
+                alert("los numeros pares son:"+ NumerosPares.join(","))
+            }
+
+        }
+    }
+    
+    </script>
+</head>
+<body>
+    <P>CLICEAME</P>
+    <input type="button" name="hacer" id="hacer" onclick="valores()">
+</body>
+</html>
